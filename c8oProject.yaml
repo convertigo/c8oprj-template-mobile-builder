@@ -1,9 +1,12 @@
-↑convertigo: 7.9.0.m006
+↑convertigo: 8.0.0.m006
 ↓template_mobileBuilderIonic [core.Project]: 
   comment: Convertigo Mobile builder Project
   corsOrigin: =Origin
   version: 8.0.0
   ↓void [connectors.SqlConnector]: 🗏 connectors/void.yaml
+  ↓MobileBuilderTemplate [references.ProjectSchemaReference]: 
+    comment: mobile builder template
+    projectName: mobilebuilder_tpl_7_9_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_7_9_0.zip
   ↓Application [core.MobileApplication]: 
     comment: Describes the mobile application global properties
     splashRemoveMode: beforeUpdate
@@ -11,7 +14,4 @@
       comment: Android platform
     ↓iOS [mobileplatforms.IOs]: 
       comment: iOS platform
-    ↓Ionic3App [mobile.components.ApplicationComponent]: 🗏 mobileApplication.yaml
-  ↓MobileBuilderTemplate [references.ProjectSchemaReference]: 
-    comment: mobile builder template
-    projectName: mobilebuilder_tpl_7_9_0=https://github.com/convertigo/c8oprj-mobilebuilder-tpl/archive/mobilebuilder_tpl_7_9_0.zip
+    ↓Ionic3App [mobile.components.ApplicationComponent]: 🗏 mobileIonic3App.yaml
